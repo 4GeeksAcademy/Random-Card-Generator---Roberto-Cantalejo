@@ -1,1 +1,44 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  height: 100%;
+  margin: 0;
+  background-color: green;
+}
+
+.card {
+  position: fixed;
+  bottom: 20vh;
+  top: 20vh;
+  left: 40vw;
+  right: 40vw;
+  height: 500px;
+  min-height: 500px;
+  width: 350px;
+  min-width: 350px;
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  border-color: black;
+  border-style: solid;
+  flex-direction: column;
+  border-width: 2px;
+}
+
+#upper-suit {
+  font-size: 90px;
+  position: relative;
+  left: 20px;
+}
+
+#random-number {
+  font-size: 140px;
+  justify-content: space-around;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#lower-suit {
+  font-size: 90px;
+  position: relative;
+  left: 280px;
+}
