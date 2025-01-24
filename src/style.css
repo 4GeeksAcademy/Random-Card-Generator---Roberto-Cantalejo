@@ -2,14 +2,13 @@ body {
   height: 100%;
   margin: 0;
   background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-  position: fixed;
-  bottom: 20vh;
-  top: 20vh;
-  left: 40vw;
-  right: 40vw;
   height: 500px;
   min-height: 500px;
   width: 350px;
@@ -17,10 +16,9 @@ body {
   background-color: white;
   display: flex;
   border-radius: 15px;
-  border-color: black;
-  border-style: solid;
+  border: solid 2px black;
   flex-direction: column;
-  border-width: 2px;
+  margin-top: 50px;
 }
 
 #upper-suit {
@@ -41,4 +39,18 @@ body {
   font-size: 90px;
   position: relative;
   left: 280px;
+}
+
+#balatro-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: url(
+    "/workspaces/Random-Card-Generator---Roberto-Cantalejo/src/assets/img/cursor-bal.png",
+    auto
+  );
 }
