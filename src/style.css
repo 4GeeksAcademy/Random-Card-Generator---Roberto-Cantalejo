@@ -53,7 +53,7 @@ body {
   border: 2px solid black;
   border-radius: 5px;
   font-size: 18px;
-  cursor: grab;
+  cursor: url(/src/assets/img/cursor-bal.png), auto;
 }
 
 #height-hint {
