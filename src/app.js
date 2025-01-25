@@ -75,3 +75,23 @@ window.onload = function() {
 let balatroButton = document.querySelector("#balatro-button");
 
 balatroButton.addEventListener("click", () => generateCard());
+
+// Esta parte asocia el ancho y alto de la carta dependiendo del número puesto //
+
+let projectInput = document.querySelector("#card-height");
+let card = document.querySelector(".card");
+let aspectRatioWidth = 0.7;
+let aspectRatioSuits = 0.18;
+let aspectRatioNumber = 0.28;
+
+function reSize() {
+  let newHeight = projectInput.value;
+  card.style.height = projectInput.value + "px";
+  card.style.width = newHeight * aspectRatioWidth + "px";
+  suits.forEach(suit => {
+    suit.style.fontSize = newHeight * aspectRatioSuits + "px";
+  });
+  randomNumber.style.fontSize = newHeight * aspectRatioNumber + "px";
+}
+
+projectInput.addEventListener("change", reSize);
