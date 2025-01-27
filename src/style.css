@@ -62,6 +62,7 @@ body {
   text-align: center;
   color: #d50606;
   font-size: 40px;
+  text-shadow: 2px 2px 4px rgb(1, 1, 1, 1);
 }
 
 input {
